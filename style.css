@@ -1,0 +1,93 @@
+#main-doc {
+    padding: 0;
+    margin: 0;
+    background-color: yellow;
+  }
+  
+  #title {
+    display: none;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333;
+    width: 20%;
+    height: 100vh;
+    overflow: auto;
+  }
+  
+  .sections {
+    position: fixed;
+    top: 0;
+    left: 20%;
+    background: yellow;
+    padding: 10px 20px 30px 20px;
+    height: 100%;
+    overflow: scroll;
+  }
+  
+  #navbar header {
+    padding: 25px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    background: #555;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-link1 {
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+  }
+  
+  .nav-link1::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: -10px;
+    top: 25px;
+  }
+  
+  #navbar ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all .5s;
+  }
+  
+  #navbar ul a:hover {
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: yellow;
+  }
+  
+  .code {
+    background: #e6e6e6;
+    padding: 10px;
+    margin: 20px;
+    width: 50%;
+    line-height: 2;
+  }
+  
+  /* Smartphones start somewhere around here */
+  @media (max-width: 900px) {
+    nav {
+     height: 50%;
+     width: 100%;
+    }
+    
+    .sections {
+      top: 50%;
+      left: 0;
+      height: 50%;
+    }
+  }
